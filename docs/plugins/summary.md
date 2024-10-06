@@ -22,25 +22,31 @@
 
 
 
-- [前置类](/plugins/prerequisites.md)
+## [前置类](/plugins/prerequisites.md)
 
 优先级：最高。
 
 必要的，不可或缺的插件，其他插件正常运作的前提条件，不需要过多研究。如：Vault
 
-- [基础类](/plugins/basic.md)
+
+
+## [基础类](/plugins/basic.md)
 
 优先级：较高。
 
 必要的，难以替代的插件，服务器日常运营几乎必备的插件，需要着重研究。如：luckperms
 
-- [拓展类](/plugins/extension.md)
+
+
+## [拓展类](/plugins/extension.md)
 
 优先级：中等。
 
 一般的，可有可无的插件，增加额外功能或改善用户体验的插件，不需要过多研究。如：DecentHolograms
 
-- [进阶类](/plugins/advanced.md)
+
+
+## [进阶类](/plugins/advanced.md)
 
 优先级：较低。
 
