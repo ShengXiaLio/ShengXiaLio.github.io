@@ -1,2 +1,0 @@
-# [将庭 Java 版服务器管理员手册](/overview/overview.md)
-
