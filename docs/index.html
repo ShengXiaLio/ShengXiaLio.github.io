@@ -1,28 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>管理员手册</title>
-    <style>
-        .cover {
-            background-color: #f5f5f5;
-            color: #4d4d4d;
-            text-align: center;
-            padding-top: 10%;
-        }
-
-        .cover h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .cover p {
-            font-size: 1.5rem;
-            line-height: 1.5;
-        }
-    </style>
 </head>
+
 <body>
     <div id="app">文档加载中...</div>
 
@@ -33,7 +17,7 @@
             loadSidebar: true,
             subMaxLevel: 3,
             auto2top: true,
-            coverpage: '/overview/overview.md', 
+            coverpage: '/README.md', 
             alias: {
                 '/_sidebar.md': '_sidebar.md'
             },
@@ -61,21 +45,5 @@
         };
     </script>
 
-    <!-- 引入Docsify核心脚本 -->
-    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-    <!-- 引入搜索插件 -->
-    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-    <!-- 引入图片缩放插件 -->
-    <script src="https://cdn.jsdelivr.net/npm/docsify-zoom-image/dist/index.min.js"></script>
-    <!-- 引入复制代码块插件 -->
-    <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-    <!-- 引入分页插件 -->
-    <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-    <!-- 引入侧边栏折叠插件 -->
-    <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-    <!-- 引入备案插件 -->
-    <script src="https://cdn.jsdelivr.net/npm/docsify-beian@latest/dist/beian.min.js"></script>
-    <!-- 引入隐藏代码插件 -->
-    <script src="https://cdn.jsdelivr.net/npm/docsify-hide-code/dist/docsify-hide-code.min.js"></script>
 </body>
 </html>
