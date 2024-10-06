@@ -22,7 +22,7 @@
 
 
 
-## [前置类](/plugins/prerequisites.md)
+#### [前置类](/plugins/prerequisites.md)
 
 优先级：最高。
 
@@ -30,7 +30,7 @@
 
 
 
-## [基础类](/plugins/basic.md)
+#### [基础类](/plugins/basic.md)
 
 优先级：较高。
 
@@ -38,7 +38,7 @@
 
 
 
-## [拓展类](/plugins/extension.md)
+#### [拓展类](/plugins/extension.md)
 
 优先级：中等。
 
@@ -46,7 +46,7 @@
 
 
 
-## [进阶类](/plugins/advanced.md)
+#### [进阶类](/plugins/advanced.md)
 
 优先级：较低。
 
