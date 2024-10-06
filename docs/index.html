@@ -3,66 +3,84 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" class="theme-css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/prismjs/themes/prism.min.css" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>管理员手册</title>
+    <!-- 引入默认样式 -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/css/docsify.css">
+    <!-- 引入高亮样式 -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/prismjs/themes/prism.min.css">
 </head>
 
 <body>
     <div id="app">文档加载中...</div>
 
     <script>
+        // Docsify配置对象
         window.$docsify = {
-            repo: "ShengXiaLio",
+            // 设置仓库链接
+            repo: 'https://github.com/ShengXiaLio/ShengXiaLio.github.io',
+            // 不加载顶部导航栏
             loadNavbar: false,
+            // 加载侧边栏
             loadSidebar: true,
+            // 设置折叠菜单的最大层级
             subMaxLevel: 3,
+            // 滚动到顶部按钮
             auto2top: true,
-            coverpage: "coverpage.md",
+            // 设置首页封面
+            coverpage: 'coverpage.md',
+            // 设置别名规则
             alias: {
-                "/_sidebar.md": "/sidebar.md"
+                '/_sidebar.md': '/sidebar.md'
             },
-            name: "管理员手册",
+            // 设置标题
+            name: '管理员手册',
+            // 合并顶部导航项
             mergeNavbar: true,
+            // 只显示封面
             onlyCover: true,
+            // 搜索配置
             search: {
-                namespace: "zh-cn"
+                namespace: 'zh-cn'
             },
+            // 分页配置
             pagination: {
                 crossChapter: true,
                 crossChapterText: true,
             },
+            // 备案信息
             beian: {
-                ICP: "赣ICP备2023008610号-1",
+                ICP: '赣ICP备2023008610号-1',
                 NISMSP: {
-                    number: "",
-                    url: "",
+                    number: '',
+                    url: '',
                 },
             },
+            // 隐藏代码配置
             hideCode: {
                 scroll: false,
                 height: 300
             }
-        }
+        };
     </script>
 
+    <!-- 引入Docsify核心脚本 -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <!-- 引入搜索插件 -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <!-- 引入图片缩放插件 -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <!-- 引入复制代码块插件 -->
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+    <!-- 引入分页插件 -->
     <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <!-- 引入侧边栏折叠插件 -->
     <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts/dist/docsify-plugin-flexible-alerts.min.js"></script>
-    <script src="../assets/scripts/lisence.js"></script>
+    <!-- 引入备案插件 -->
     <script src="//cdn.jsdelivr.net/npm/docsify-beian@latest/dist/beian.min.js"></script>
+    <!-- 引入隐藏代码插件 -->
     <script src="//cdn.jsdelivr.net/npm/docsify-hide-code/dist/docsify-hide-code.min.js"></script>
+
 </body>
 
 </html>
