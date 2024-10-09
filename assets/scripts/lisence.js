@@ -1,5 +1,5 @@
 function getLatestCommitInfo(path) {
-    const apiURL = `https://api.github.com/repos/ShengXiaLio/ShengXiaLio.github.io/commits/${path}`;
+    const apiURL = `https://api.github.com/repos/ShengXiaLio/ShengXiaLio.github.io/commits${path}`;
     return fetch(apiURL)
         .then(response => response.json())
         .then(data => {
