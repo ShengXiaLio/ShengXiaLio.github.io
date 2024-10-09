@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" class="theme-css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/prismjs/themes/prism.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/docsify@4/dist/docsify.min.css" rel="stylesheet">
 
     <title>管理员手册</title>
 </head>
@@ -41,8 +42,16 @@
             hideCode: {
                 scroll: false,
                 height: 300
-            }
-        }
+            },
+            plugins: [
+                function (hook, vm) {
+                    hook.mounted(() => {
+                        // 初始化插件
+                        docsifyPluginCommitInfo(hook, vm);
+                    });
+                }
+            ]
+        };
     </script>
 
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
@@ -54,7 +63,7 @@
     <script src="//cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts/dist/docsify-plugin-flexible-alerts.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-beian@latest/dist/beian.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-hide-code/dist/docsify-hide-code.min.js"></script>
-    <script src="../assets/scripts/lisence.js"></script>
+    <script src="../assets/scripts/docsify-plugin-commit-info.js"></script>
 </body>
 
 </html>
