@@ -46,6 +46,16 @@ Wiki：https://william278.net/docs/huskhomes
 
 
 
+## LiteSignIn - 签到
+
+概述：自带 GUI 签到、加入信息、签到奖励设置、签到排行榜
+
+是否可替代：否
+
+源：https://www.spigotmc.org/resources/79584/
+
+
+
 ## DecentHolograms - 全息图
 
 概述：全息图/悬浮字/浮空字，用来展示文本和数据信息
@@ -151,16 +161,6 @@ Wiki：https://wiki.ajg0702.us/ajLeaderboards/setup/
 
 
 
-## LiteSignIn - 签到
-
-概述：自带 GUI 签到、加入信息、签到奖励设置、签到排行榜
-
-是否可替代：否
-
-源：https://www.spigotmc.org/resources/79584/
-
-
-
 ## MiniMOTD - 服务器 MOTD 显示
 
 概述：用于多人游戏界面，服务器对外展示的自定义文本
@@ -173,3 +173,12 @@ Wiki：https://github.com/jpenilla/MiniMOTD/wiki
 
 
 
+## Plugin Hide Pro - 插件隐藏
+
+概述：隐藏插件信息，仅向玩家提示能看到的插件，自定义阻止信息
+
+是否可替代：是（利用 Luckperms 取消权限节点即可，但不优雅）
+
+源：https://www.spigotmc.org/resources/77112/
+
+Wiki：https://github.com/Nononitas/Plugin-Hide-Pro/wiki

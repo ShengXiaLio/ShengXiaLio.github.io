@@ -33,3 +33,13 @@
 Wiki：https://wiki.placeholderapi.com/
 
 占位符列表：https://wiki.placeholderapi.com/users/placeholder-list/
+
+
+
+## PacketEvents API - 数据包前置
+
+概述：开源的数据包处理 API
+
+是否可替代：否
+
+源：https://www.spigotmc.org/resources/80279/
