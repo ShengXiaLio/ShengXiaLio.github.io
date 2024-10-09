@@ -40,7 +40,19 @@ function plugin(hook, vm) {
                 <p class="commit-message">${commitInfo.message}</p>
                 <br/>
             `;
-            this.innerHTML = this.innerHTML.replace("</footer>", footerContent + "</footer>");
+
+            // 检查页面是否存在 <footer> 元素
+            const footerElement = document.querySelector('footer');
+            if (footerElement) {
+                // 替换 <footer> 内容
+                footerElement.innerHTML = footerContent;
+            } else {
+                // 如果没有 <footer> 元素，则添加一个新的 <footer>
+                const body = document.querySelector('body');
+                const footer = document.createElement('footer');
+                footer.innerHTML = footerContent;
+                body.appendChild(footer);
+            }
         }
     });
 }
