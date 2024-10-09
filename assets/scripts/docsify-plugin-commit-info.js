@@ -45,4 +45,4 @@ function plugin(hook, vm) {
     });
 }
 
-export default plugin;
+window.docsifyPluginCommitInfo = plugin;
