@@ -54,6 +54,30 @@
     <script src="//cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts/dist/docsify-plugin-flexible-alerts.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-beian@latest/dist/beian.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-hide-code/dist/docsify-hide-code.min.js"></script>
+
+
+    <script>
+        var repoPath = 'ShengXiaLio/ShengXiaLio.github.io'; 
+
+        fetch(`https://api.github.com/repos/${repoPath}/commits?per_page=1`)
+          .then(response => response.json())
+          .then(data => {
+            var commit = data[0];
+            var commitTime = new Date(commit.commit.author.date);
+            var lastUpdated = document.createElement('div');
+            var updatedBy = document.createElement('div');
+
+            lastUpdated.id = 'lastUpdated';
+            updatedBy.id = 'updatedBy';
+
+            lastUpdated.textContent = `最后更新时间: ${commitTime.toLocaleString()}`;
+            updatedBy.textContent = `更新者: ${commit.commit.author.name}`;
+
+            document.body.appendChild(lastUpdated);
+            document.body.appendChild(updatedBy);
+          })
+          .catch(error => console.error('加载提交信息失败:', error));
+    </script>
 </body>
 
 </html>
