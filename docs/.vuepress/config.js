@@ -12,10 +12,10 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     // 添加您的部署域名
-    // hostname: 'https://your_site_url',
-    // your git repo url
-    docsRepo: '',
+    hostname: 'https://xialio.jtmc.cc',
+    docsRepo: 'https://github.com/ShengXiaLio/ShengXiaLio.github.io',
     docsDir: 'docs',
+    footer: { message: "Copyright © 2024 将庭服服务台"},
 
     plugins: {
       /**
