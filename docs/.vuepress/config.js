@@ -12,7 +12,7 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     // 添加您的部署域名
-    hostname: 'https://xialio.jtmc.cc',
+    hostname: 'https://xialio.jtmc.cc/',
     footer: { message: "Copyright © 2024 将庭服服务台"},
 
     plugins: {
